@@ -40,12 +40,31 @@ mul(vA, vB) = log( exp(vA) * exp(vB) )
 ### Install
 ```bash
 pip install -r requirements.txt
-```
+````
 
 ### Run demos
+
 ```bash
 python -m demos.demo_linear_to_rotation
 python -m demos.demo_quaternion_volume_roundtrip
 python -m demos.demo_spin_chord_chsh
 python -m demos.demo_sedenion_volume_interpolation
 ```
+
+---
+
+## 4) Demos (What you will see)
+
+* Linear motion (16D) -> rotation / wave (3D projection)
+* Quaternion volumetric encode/decode round-trip (phase preserved via atan2)
+* 720° spinor loop + chord probability = sin^2(theta/2)
+* CHSH violation in an axis-chord entanglement toy generator (explicitly nonlocal axis-coupling rule)
+* 16D "volume interpolation" vs naive interpolation (norm leak vs norm preserved by design)
+
+---
+
+## 5) Notes / Limitations
+
+* This repo focuses on **reproducible outputs** and clear definitions.
+* Any claim beyond the model definitions must be treated as a hypothesis until experimentally validated.
+
